@@ -4,47 +4,47 @@
             "value": [
                 {
                     "prefix": "10.2.64.0/18",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/0bc68781-8f9f-4d7b-ba8f-c00daedf7122/"
                 },
                 {
                     "prefix": "10.2.64.0/24",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/4854daef-1690-4cc6-82cc-01483874d518/"
                 },
                 {
                     "prefix": "10.2.65.0/24",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/45231986-5631-4cbf-97bc-b784c6d49a6a/"
                 },
                 {
                     "prefix": "10.2.66.0/24",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/48697976-3fc8-4cef-bb4b-ad50d7251649/"
                 },
                 {
                     "prefix": "10.2.67.0/24",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/fde03d5d-aa0c-4902-992d-d3b7d322cf4c/"
                 },
                 {
                     "prefix": "10.2.68.0/24",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/0bd722aa-c5ce-4649-9f9b-2268bd42eeac/"
                 },
                 {
                     "prefix": "10.2.69.0/24",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/48a8edf6-6da0-44ed-aa18-acf6ec6fb136/"
                 },
                 {
                     "prefix": "10.2.70.0/24",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/0f40877e-46dd-4848-ab1f-001985b729c8/"
                 },
                 {
                     "prefix": "10.2.71.0/24",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/50eb14ed-2efe-4370-bf4c-329c8a3d322a/"
                 },
                 {
                     "prefix": "10.2.72.0/24",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/fd320497-24ef-4b93-b855-120b7da099c8/"
                 },
                 {
                     "prefix": "10.2.73.0/24",
-                    "description": ""
+                    "url": "https://demo.nautobot.com/api/ipam/prefixes/98100bd3-397a-4495-ba7b-f65ee54bf052/"
                 }
             ]
         }
