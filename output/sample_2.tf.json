@@ -1,0 +1,136 @@
+{
+    "output": {
+        "sample_2_tenant_and_prefix_example": {
+            "value": [
+                {
+                    "prefix": "10.0.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.1.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.2.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.3.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.4.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.5.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.6.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.7.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.8.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.9.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.10.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.11.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.12.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.13.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.14.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.15.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.16.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.17.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.18.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.19.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.20.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.21.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.22.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.23.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.24.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.25.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.26.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.27.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.28.0.0/16",
+                    "description": ""
+                },
+                {
+                    "prefix": "10.29.0.0/16",
+                    "description": ""
+                }
+            ]
+        },
+        "sample_2_tenant_and_prefix_example_and_location": {
+            "value": [
+                {
+                    "prefix": "10.0.0.0/16",
+                    "description": ""
+                }
+            ]
+        }
+    }
+}
