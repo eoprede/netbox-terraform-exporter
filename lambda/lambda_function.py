@@ -145,13 +145,15 @@ def get_prefixes(netbox_url, params):
 def build_list_output(input, filename_key):
     # Build output as a list of maps, currently only prefix and description are available
     results = {"output": {}}
+    return_fields = input.get("return_fields", ["prefix", "description"])
     for k, v in input["lookup_prefixes"].items():
         json_response = get_prefixes(os.environ.get("NETBOX_URL"), v)
         if json_response and json_response["count"] > 0:
             results["output"].update({f"{filename_key}_{k}": {"value": []}})
             for p in json_response["results"]:
                 results["output"][f"{filename_key}_{k}"]["value"].append(
-                    {"prefix": p["prefix"], "description": p["description"]}
+                    #{"prefix": p["prefix"], "description": p["description"]}
+                    {a: p[a] for a in return_fields}
                 )
         else:
             print("Didn't find any prefixes with params " + str(v))

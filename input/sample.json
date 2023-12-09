@@ -4,5 +4,6 @@
             "role": "mgmt",
             "location": "LAX01"
         }
-    }
+    },
+    "return_fields": ["prefix", "status"]
 }
