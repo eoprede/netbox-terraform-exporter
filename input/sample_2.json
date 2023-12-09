@@ -7,7 +7,7 @@
         "tenant_and_prefix_example_and_location": {
             "prefix_length": "16",
             "tenant": "Nautobot%20Airports",
-            "location": "ATL1"
+            "location": "ATL01"
         }
     }
 }
