@@ -5,5 +5,5 @@
             "location": "LAX01"
         }
     },
-    "return_fields": ["prefix", "status"]
+    "return_fields": ["prefix", "url"]
 }
