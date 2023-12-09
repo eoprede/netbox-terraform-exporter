@@ -1,0 +1,8 @@
+{
+    "lookup_prefixes": {
+        "role_and_location": {
+            "role": "mgmt",
+            "location": "LAX01"
+        }
+    }
+}
