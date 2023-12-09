@@ -249,11 +249,12 @@ def run() -> None:
             else:
                 repo.git.add(f"{git_repo_path}/output/{f.replace('.json', '.tf.json')}")
                 repo.git.commit(m=f"Update {f.replace('.json', '.tf.json')}")
-                repo.git.push("--set-upstream", "origin", str(repo.head.ref))
-                print("Changes commited and pushed to git repo")
+                print("Changes commited")
                 commits_added = True
 
     if commits_added:
+        print("Pushing changes")
+        repo.git.push("--set-upstream", "origin", str(repo.head.ref))
         print(f"Creating PR for {str(repo.head.ref)}")
         r = create_git_pr(git_repo, git_token, str(repo.head.ref))
         print(r.status)
