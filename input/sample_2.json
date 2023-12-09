@@ -2,11 +2,11 @@
     "lookup_prefixes": {
         "tenant_and_prefix_example": {
             "prefix_length": "16",
-            "tenant": "Nautobot Airports"
+            "tenant": "Nautobot%20Airports"
         },
         "tenant_and_prefix_example_and_location": {
             "prefix_length": "16",
-            "tenant": "Nautobot Airports",
+            "tenant": "Nautobot%20Airports",
             "location": "ATL1"
         }
     }
