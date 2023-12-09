@@ -224,7 +224,7 @@ def run() -> None:
         if "already exists and is not an empty directory" in str(e):
             print("Repo already exists, pulling latest")
             repo = Repo(git_repo_path)
-            repo.git.checkout("main")
+            repo.git.checkout("master")
             repo.remotes.origin.pull()
 
     print("Clone complete, checking out new branch")
