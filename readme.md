@@ -4,10 +4,10 @@ This script is designed to address the issue of not having proper change control
 Note that while this script does work as is, it is more so meant not as a final product but as a starting point for your own customizations. 
 
 ## Environment variables
-* NETBOX_URL - URL to the Netbox instance
+* NETBOX_URL - URL to the Netbox instance, i.e. "https://demo.nautobot.com"
 * NETBOX_TOKEN - Token to access the Netbox API
 * GIT_TOKEN - Token to access the Github API
-* GIT_REPO - Github repository to work with
+* GIT_REPO - Github repository to work with, i.e. "eoprede/netbox-terraform-exporter
 * GIT_REPO_PATH - Path to the folder to clone repo into, optional
 
 ## Secrets to use for Lambda function
