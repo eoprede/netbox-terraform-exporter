@@ -162,7 +162,7 @@ def clone_git_repo(repo_url, clone_path):
     return Repo.clone_from(repo_url, clone_path)
 
 
-def create_git_pr(git_repo, git_token, head_ref):
+def create_git_pr(git_repo, git_token, head_ref, git_master_branch):
     url = f"https://api.github.com/repos/{git_repo}/pulls"
     headers = {
         "Authorization": "Bearer " + git_token,
@@ -172,7 +172,7 @@ def create_git_pr(git_repo, git_token, head_ref):
     data = {
         "title": "Automatic Prefix Merge",
         "head": head_ref,
-        "base": "main",
+        "base": git_master_branch,
         "body": "Automatically created PR by Netbox Lambda",
     }
     response = request(url, headers=headers, data=data, method="POST")
@@ -215,6 +215,7 @@ def run() -> None:
     git_repo = os.environ.get("GIT_REPO")
     git_repo_path = os.environ.get("GIT_REPO_PATH", "/tmp/git_repo")
     git_token = os.environ.get("GIT_TOKEN")
+    git_master_branch = os.environ.get("GIT_MASTER_BRANCH", "master")
 
     try:
         print(f"Cloning {git_repo} to {git_repo_path}")
@@ -226,7 +227,7 @@ def run() -> None:
         if "already exists and is not an empty directory" in str(e):
             print("Repo already exists, pulling latest")
             repo = Repo(git_repo_path)
-            repo.git.checkout("master")
+            repo.git.checkout(git_master_branch)
             repo.remotes.origin.pull()
 
     print("Clone complete, checking out new branch")
@@ -258,7 +259,8 @@ def run() -> None:
         print("Pushing changes")
         repo.git.push("--set-upstream", "origin", str(repo.head.ref))
         print(f"Creating PR for {str(repo.head.ref)}")
-        r = create_git_pr(git_repo, git_token, str(repo.head.ref))
+        r = create_git_pr(git_repo, git_token, str(repo.head.ref), git_master_branch)
+        print(r.body)
         print(r.status)
 
 
