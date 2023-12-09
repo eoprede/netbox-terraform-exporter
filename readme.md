@@ -25,8 +25,9 @@ Create a new Lambda function, set the environment variables and upload the zip f
 
 ## Input file structure
 Script is looking for the 2 keys in the file:
-    * lookup_prefixes - dictionary of prefixes to look up in Netbox, key is the name of the output and values are k:v pairs of parameters for Netbox query in URL format.
-    * return_fields - list of fields to return from Netbox, if not specified defaults to ["prefix,description"]
+
+* lookup_prefixes - dictionary of prefixes to look up in Netbox, key is the name of the output and values are k:v pairs of parameters for Netbox query in URL format.
+* return_fields - list of fields to return from Netbox, if not specified defaults to ["prefix,description"]
 
 ## Output file structure
 Output files are in the tf.json format, suitable for the direct import to terraform import as a module. A very basic example of importing the values and displaying them as output:
