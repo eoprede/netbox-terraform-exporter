@@ -4,47 +4,91 @@
             "value": [
                 {
                     "prefix": "10.2.64.0/18",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 },
                 {
                     "prefix": "10.2.64.0/24",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 },
                 {
                     "prefix": "10.2.65.0/24",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 },
                 {
                     "prefix": "10.2.66.0/24",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 },
                 {
                     "prefix": "10.2.67.0/24",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 },
                 {
                     "prefix": "10.2.68.0/24",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 },
                 {
                     "prefix": "10.2.69.0/24",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 },
                 {
                     "prefix": "10.2.70.0/24",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 },
                 {
                     "prefix": "10.2.71.0/24",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 },
                 {
                     "prefix": "10.2.72.0/24",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 },
                 {
                     "prefix": "10.2.73.0/24",
-                    "description": ""
+                    "status": {
+                        "id": "9f38bab4-4b47-4e77-b50c-fda62817b2db",
+                        "object_type": "extras.status",
+                        "url": "https://demo.nautobot.com/api/extras/statuses/9f38bab4-4b47-4e77-b50c-fda62817b2db/"
+                    }
                 }
             ]
         }
