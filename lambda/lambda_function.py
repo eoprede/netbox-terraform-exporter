@@ -260,7 +260,6 @@ def run() -> None:
         repo.git.push("--set-upstream", "origin", str(repo.head.ref))
         print(f"Creating PR for {str(repo.head.ref)}")
         r = create_git_pr(git_repo, git_token, str(repo.head.ref), git_master_branch)
-        print(r.body)
         print(r.status)
 
 
