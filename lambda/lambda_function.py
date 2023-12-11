@@ -199,15 +199,19 @@ def get_secrets(secret_key) -> str:
 
 def lambda_handler(event, context):
     # Handles setting up virtual environment when being executed as Lambda
+    # As boto3 is not needed for the main script, it is imported here as a global variable.
     global boto3
     import boto3
-    os.environ["HTTPS_PROXY"] = os.environ.get("PROXY_URL", "") #in case you need to set a proxy from another env
+    #in case you need to set a proxy from another env
+    os.environ["HTTPS_PROXY"] = os.environ.get("PROXY_URL", "")
     os.environ[
         "SECRETSMANAGER_URL"
     ] = f"https://secretsmanager.{os.environ.get('AWS_REGION')}.amazonaws.com"
+    # If you needed to bypass proxy for certain URLs
     os.environ[
         "NO_PROXY"
     ] = f"secretsmanager.{os.environ.get('AWS_REGION')}.amazonaws.com, {os.environ.get('NETBOX_URL').replace('https://', '')}"
+    
     os.environ["GIT_TOKEN"] = get_secrets("GithubTOKEN")
     os.environ["NETBOX_TOKEN"] = get_secrets("NetboxTOKEN")
     run()
@@ -225,7 +229,6 @@ def run() -> None:
             f"https://{git_token}@github.com/{git_repo}.git", git_repo_path
         )
     except exc.GitCommandError as e:
-        #print(e)
         if "already exists and is not an empty directory" in str(e):
             print("Repo already exists, pulling latest")
             repo = Repo(git_repo_path)
@@ -262,7 +265,10 @@ def run() -> None:
         repo.git.push("--set-upstream", "origin", str(repo.head.ref))
         print(f"Creating PR for {str(repo.head.ref)}")
         r = create_git_pr(git_repo, git_token, str(repo.head.ref), git_master_branch)
-        print(r.status)
+        if int(r.status) == 201:
+            print("PR Created")
+        else:
+            print("PR Creation Failed", r.body)
 
 
 if __name__ == "__main__":
