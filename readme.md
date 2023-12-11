@@ -18,10 +18,10 @@ Note that while this script does work as is, it is more so meant not as a final 
 As it is not possible to install additional packages for Lambda function, script has all the dependencies included. When deploying it to Lambda, make sure you zip the whole content of lambda folder and upload it to Lambda as zip.
 
 ## Running on a Linux/MacOS (or maybe even Windows) host
-Just set environments and run lambda function.py, make sure that lambda subfolder is in your path (or just execute file from it).
+Make sure git CLI is installed, as the git library depends on it. Just set environments and run lambda function.py, make sure that lambda subfolder is in your path (or just execute file from it). 
 
 ## Running as a Lambda function
-Create a new Lambda function, set the environment variables and upload the zip file. Set the handler to lambda_function.lambda_handler. Set the timeout to 5 minutes or however long it takes to execute. For security reasons, secrets are not set as environment variables but as Lambda secrets and your function will need sufficient permissions to access them.
+Create a new Lambda function, set the environment variables and upload the zip file. Set the handler to lambda_function.lambda_handler. Set the timeout to 5 minutes or however long it takes to execute. For security reasons, secrets are not set as environment variables but as Lambda secrets and your function will need sufficient permissions to access them. You will need to use git layer for your lambda, as git library requires it - https://github.com/lambci/git-lambda-layer
 
 ## Input file structure
 Script is looking for the 2 keys in the file:
